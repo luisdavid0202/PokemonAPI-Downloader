@@ -1,5 +1,5 @@
 CREATE TABLE "AbilitiesPokemon" ( `Id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, `PokemonId` INTEGER, `Name` TEXT );
-CREATE TABLE "Pokemones" ( `PokemonId` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, `Name` TEXT, `Weight` INTEGER, `Height` INTEGER, `BaseExperience` INTEGER );
+CREATE TABLE "Pokemons" ( `PokemonId` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, `Name` TEXT, `Weight` INTEGER, `Height` INTEGER, `BaseExperience` INTEGER );
 CREATE TABLE "SpritesPokemon" ( `PokemonId` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, `BackDefault` TEXT, `BackFemale` TEXT, `BackShiny` TEXT, `BackShinyFemale` TEXT, `FrontDefault` TEXT, `FrontFemale` TEXT, `FrontShiny` TEXT, `FrontShinyFemale` TEXT );
 CREATE TABLE "StatsPokemon" ( `PokemonId` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, `Speed` INTEGER, `SpecialDefense` INTEGER, `SpecialAttack` INTEGER, `Defense` INTEGER, `Attack` INTEGER, `Hp` INTEGER );
 CREATE TABLE "TypesPokemon" ( `Id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, `PokemonId` INTEGER, `Name` TEXT );

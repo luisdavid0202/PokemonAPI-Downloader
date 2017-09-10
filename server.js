@@ -36,7 +36,7 @@ app.post('/Insert', function(req, res, next) {
     var height = parameters.height;    
     var baseExp = parameters.base_experience;
 
-    var query = "INSERT INTO Pokemones (Name, Weight, Height, BaseExperience) VALUES ";
+    var query = "INSERT INTO Pokemons (Name, Weight, Height, BaseExperience) VALUES ";
     query += "('"+name+"', "+weight+", "+height+", "+baseExp+");";
     db.run(query);
 
