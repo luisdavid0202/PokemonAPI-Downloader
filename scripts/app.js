@@ -77,7 +77,7 @@ $(function () {
         Insert: function(_data){
             $.ajax({
                 method: "POST",
-                url: "http://192.168.1.13:3000/Insert",
+                url: "http://127.0.0.1:3000/Insert",
                 dataType: "JSON",
                 async: false,
                 data: _data,

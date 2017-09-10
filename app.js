@@ -13,8 +13,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname));
 
-app.listen(3000, '192.168.1.13', function () {
-    console.log("Corriendo en puerto 3000");
+app.listen(3000, '127.0.0.1', function () {
+    console.log("Running at port 3000");
 });
 
 app.use(function(req, res, next) {
@@ -23,10 +23,10 @@ app.use(function(req, res, next) {
     next();
 });
   
-app.get('/', function(req, res, next) {
-// Handle the get for this route
+app.get('/', function (req, res) {
+    res.render('index');
 });
-  
+
 app.post('/Insert', function(req, res, next) {
     const parameters = req.body;    
 
