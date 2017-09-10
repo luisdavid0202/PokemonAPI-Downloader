@@ -1,0 +1,24 @@
+{
+  "name": "pokemonapi-downloader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": {
+    "name": "Luis David Lopez Z",
+    "email": "luisdavid0202@outlook.com",
+    "url": "https://www.facebook.com/luisdavid0202"
+  },
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/luisdavid0202/PokemonAPI-Downloader"
+  },
+  "dependencies": {
+    "sql.js": "^0.4.0",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "path": "^0.12.7"    
+  }
+}
